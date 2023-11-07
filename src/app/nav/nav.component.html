@@ -1,0 +1,51 @@
+<nav
+  class="navbar navbar-expand-lg"
+  data-bs-theme="light"
+  style="background-color: #39a7ff"
+>
+  <div class="container">
+    <a [routerLink]="['/']" class="navbar-brand">
+      <img
+        src="https://i.postimg.cc/C1W92mJs/allergies.png"
+        alt="logo.png"
+        width="40"
+        height="40"
+      />
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="offcanvas"
+      data-bs-target="#offcanvasNavbar"
+      aria-controls="offcanvasNavbar"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div
+      class="offcanvas offcanvas-end"
+      tabindex="-1"
+      id="offcanvasNavbar"
+      aria-labelledby="offcanvasNavbarLabel"
+    >
+      <div class="offcanvas-header">
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-end ms-5">
+          <li class="nav-item">
+            <a class="nav-link active fw-bold me-5" aria-current="page" [routerLink]="['/intolerancies']">Les intoleràncies alimentàries</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active fw-bold" aria-current="page" [routerLink]="['/reaccions']">Les reaccions al·lèrgiques</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
