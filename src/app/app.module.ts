@@ -7,6 +7,8 @@ import { NavComponent } from './nav/nav.component';
 import { HomeComponent } from './home/home.component';
 import { IntoleranciaComponent } from './intolerancia/intolerancia.component';
 import { ReaccionsComponent } from './reaccions/reaccions.component';
+import { DiferenciasComponent } from './diferencias/diferencias.component';
+import { PrevencionsComponent } from './prevencions/prevencions.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { ReaccionsComponent } from './reaccions/reaccions.component';
     NavComponent,
     HomeComponent,
     IntoleranciaComponent,
-    ReaccionsComponent
+    ReaccionsComponent,
+    DiferenciasComponent,
+    PrevencionsComponent
   ],
   imports: [
     BrowserModule,
